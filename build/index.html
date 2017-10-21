@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>
+        Auto Scroller
+      </title>
+      <meta property="og:title" content="Auto Scroller">
+    <meta charset="utf-8">
+    <meta property="og:type" content="article">
+
+      <meta property="og:description" content="Short description of your project">
+      <meta property="description" content="Short description of your project">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="idyll-mount"><div class="idyll-root" data-reactroot=""><div class="scroll" id="scroll-0"><div class="element selected"><div class="article-header"><h1 class="hed">Auto Scroller</h1><h2 class="dek">Example of custom scroll behavior in Idyll</h2><div class="byline">By: <a href="https://twitter.com/mathisonian">Matthew Conlen</a></div></div><button>
+    Continue
+  </button></div><div class="element "><p>
+  Several days ago <a href="https://twitter.com/maartenzam"><!-- -->Maarten Lambrechts</a> —
+  creator of the great <a href="http://rocknpoll.graphics"><!-- -->rocknpoll.graphics</a> —
+  wrote on twitter asking if it would create an article with
+  similar navigation using Idyll.</p><div></div><p>It is!</p><span __expr__="[object Object]" class="action"> Scroll on to find out more... </span></div><div class="element "><p>
+To simplify things, I created a <code><!-- -->Scroll</code> component that will scroll to a particular
+section based on its input value. The Idyll markup looks something like this:</p><pre><code>[var name:&quot;currentSection&quot; value:&quot;1&quot; /]
+[Scroll section:currentSection]
+  [Section name:&quot;1&quot;] This is section 1... [/Section]
+  [Section name:&quot;2&quot;] This is section 2... [/Section]
+  [Section name:&quot;2&quot;] This is section 3... [/Section]
+[/Scroll]</code></pre><p>To trigger a scroll to the next section, simply update that <code><!-- -->currentSection</code> variable:</p><pre><code>[button onClick:`currentSection++` ]
+  Click me to go to the next section!
+[/button]</code></pre><button>
+  Click me to go to the next section!</button></div><div class="element "><p>
+  This scrolling code can be used in conjunction with the variables powering the rest of
+  document. For example:</p><p>Add Point: <button><!-- --> Add point </button></p><p>Remove Point: <button><!-- --> Remove point </button></p><p>Toggle Color: <button><!-- --> Toggle color</button></p><span __expr__="[object Object]" class="action"> Click to continue... </span></div><div class="element "><p>
+  Thanks for reading. The code for this can be found at:</p><p>Find out more about Idyll at <a href="https://idyll-lang.org"><!-- -->idyll-lang.org</a>. Feel free to reach out
+  in our <a href="https://gitter.im/idyll-lang/Lobby"><!-- -->chatroom on gitter</a>, or on twitter <a href="https://twitter.com/mathisonian"><!-- -->@mathisonian</a>.</p><button>Back to top</button></div></div><div class="d3-component" style="width:100%"></div></div></div>
+    <script src="index.js"></script>
+  </body>
+</html>
