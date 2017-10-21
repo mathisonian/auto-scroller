@@ -22,6 +22,9 @@ circle {
   cursor: pointer;
   color: #8900FF;
 }
+a {
+  color: #8900FF;
+}
 .element {
   margin: 25px 0 75vh 25px;
   opacity: 0.6;
